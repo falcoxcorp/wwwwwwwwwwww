@@ -192,7 +192,7 @@ const BuySell = ({ data, token, tokenBalance, reserve }) => {
                             }
                         </span></p>
                         {isBuy ? <p>Your Balance: <span className='receivedvalu'>{balance ?? 0} {chain ? chain.nativeCurrency.symbol : 'currency'}</span></p> :
-                            <p>Your Holdings: <span className='receivedvalu'>{parseFloat(formatUnits(tokenBalance, 18)).toFixed(12)} {poolDetailsParsed.symbol}</span></p>}
+                            <p>Your Holdings: <span className='receivedvalu'>{parseFloat(formatUnits(tokenBalance || 0n, 18)).toFixed(12)} {poolDetailsParsed.symbol}</span></p>}
                     </div>
                     <div className="flex justify-between space-x-4">
                         {isBuy ? (

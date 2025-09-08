@@ -37,7 +37,7 @@ const TokenInfo = ({ poolDetails, data }) => {
                     <li className="flex items-start">
                         <span className="text-purple-300 font-medium min-w-[100px]">Address:</span>
                         <motion.a
-                            href={`https://soneium.blockscout.com/token/${data[0].result?.token}`}
+                            href={`https://scan.coredao.org/token/${data[0].result?.token}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-400 hover:text-blue-300 transition-colors flex items-center"
