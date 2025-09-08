@@ -28,7 +28,7 @@ export function useTradeEvents(contractAddress) {
     const logs = await publicClient.getLogs({
       address: contractAddress,
       event: tradeEventAbi, // Use the correct ABI here
-      fromBlock: blockNumber - 10000n, // Starting block
+      fromBlock: blockNumber - 2000n, // Starting block
       toBlock: blockNumber, // Fetch logs up to the latest block
       // fromBlock: blockNumber - 200000n, // Starting block
       // toBlock: blockNumber - 150000n, // Fetch logs up to the latest block
